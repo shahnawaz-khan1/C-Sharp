@@ -1,25 +1,516 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36203.30 d17.14
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#_Practic", "C#_Practic\C#_Practic.csproj", "{1CC5BDFD-0107-4037-9A0A-623CFA02877C}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1CC5BDFD-0107-4037-9A0A-623CFA02877C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CC5BDFD-0107-4037-9A0A-623CFA02877C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CC5BDFD-0107-4037-9A0A-623CFA02877C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CC5BDFD-0107-4037-9A0A-623CFA02877C}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5AFF5125-610D-446E-9C5A-9D881164A11F}
-	EndGlobalSection
-EndGlobal
+////using System;
+
+////namespace C__Practic
+////{
+////    internal class Program
+////    {
+////        static void Main(string[] args)
+////        {
+////            //Write a program that prints “Welcome to C# Practice”.
+////            Console.WriteLine("Welcome to my Code");
+////            Console.ReadLine(); 
+////        }
+////    }
+////}
+////using System;
+
+////namespace C__Practic
+////{
+////    class student
+////    {
+////        public void Display() 
+////        {
+////           //Create a class called Student with a method Display() that prints "Student info".
+////            Console.WriteLine("Student info");
+////            Console.ReadLine();
+
+////        }
+////    }
+////}
+
+//////Create a program that uses Main() and another custom method to call each other in a clean, modular structure
+
+////using System;
+
+////namespace C__Practic
+////{
+////    class student
+////    {
+////        public void Display()
+////        {
+////            Console.WriteLine("Student info");
+////            Console.ReadLine();
+
+////        }
+////    }
+////}
+
+//using System;
+//using System.Linq;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        ////int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//        ////// TODO: Sirf even numbers print karo}
+//        //int[] number = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+//        //var  evenNumber = number.Where(n => n % 2 == 2);
+
+//        //foreach (var item in number)
+//        //{
+//        //    Console.WriteLine(item);
+//        //}
+
+//        //int[] numbers = { 1, 2, 3, 4, 5 };
+//        // TODO: Har number ka square nikal kar print karo
+
+//        int[] numbers = { 1, 2, 3, 4, 5 };
+
+//        foreach (var i in numbers)
+//        {
+//            Console.WriteLine(i*i);
+//        }
+//    }
+//}
+
+
+//Q Swap Two Integers Without Using a Third Variable
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Net.NetworkInformation;
+using System.Runtime.InteropServices;
+using System.Security.Policy;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+
+
+class program
+{
+    
+    static void Main()
+    {
+        //int a = 20;
+        //int b = 10;
+
+//Console.WriteLine("Before Swap: a = " + a + ", b = " + b);
+
+//a = a + b; // a now becomes 30
+//b = a - b; // b becomes 20 (30 - 10)
+//a = a - b; // a becomes 10 (30 - 20)
+
+//Console.WriteLine("After swapping: a = " + a + ", b = " + b);
+//Console.ReadLine();
+//Write a program that accepts the length and width of a rectangle from the user, stores them in variables, and calculates:
+
+//Q The area of the rectangle
+
+//The perimeter of the rectangle
+
+//Also display all the variables clearly.
+
+//Console.Write("Enter the length of rectangle: ");
+//double length = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Enter the width of rectangle: ");
+//double width = Convert.ToDouble(Console.ReadLine());
+
+//double area = length * width;
+//double perimeter = 2 * (length + width);
+
+//Console.WriteLine($" Length {length}\n Width{width} \n Area {area} \n Perimeter {perimeter}");
+
+//Q Write a program that asks the user to input:
+
+//Principal amount
+
+//Annual interest rate(in %)
+
+//Time in years
+
+//Then calculate Simple Interest using the formula and show all variables clearly
+
+//Console.WriteLine("===== Simple Interest Calculator =====\n");
+
+
+//Console.Write("Enter the Principal amount: ");
+//double principal = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Enter the Annual interest rate (in %): ");
+//double rate =Convert.ToDouble (Console.ReadLine());
+//Console.Write("Enter the Time in years: ");
+//double time = Convert.ToDouble(Console.ReadLine());
+
+//double simple = (principal * rate * time) / 100;
+//Console.WriteLine($"Principal Amount: {principal}\nAnnual Interest Rate: {rate}%\nTime in Years: {time}\nSimple Interest: {simple}");
+//Console.WriteLine();
+
+
+//Write a program that:
+
+//Declares one variable of each data type:
+//int, float, double, char, string, and bool
+//Assigns some values
+//Prints all of them using interpolation.
+
+//Console.WriteLine("===== Data Types Example =====\n");
+
+//int myint = 42;
+//float myfloat = 3.14f;
+//double mydouble = 3.14159;
+//char mychar = 'A';
+//string mystring = "Hello, World!";
+//bool mybool = true;
+
+//Console.WriteLine($"Integer: {myint} \nmyfloat: {myfloat}\nmydouble: {mydouble} \nmychar: {mychar}\n mystring: {mystring}\nmybool: {mybool}");
+
+
+/*
+Q Write a program that:
+Asks the user to enter:
+Their name(string)
+Their age(int)
+Their height in meters(float)
+Whether they are a student(bool, true or false)
+Store each input in the correct data type.
+Print all details in a clean formatted summary.
+*/
+
+//Console.WriteLine("===== User Information =====\n");
+
+//Console.Write("Enter Your Name: ");
+//string name = Console.ReadLine();
+//Console.Write("Enter Your Age: ");
+//int age = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter Your Height in Meters: ");
+//float height = float.Parse(Console.ReadLine());
+//Console.Write("Are you a student? (true/false): ");
+//bool isStudent = Convert.ToBoolean(Console.ReadLine());
+
+//Console.WriteLine("\n===== Summary =====\n");
+
+//Console.WriteLine($"Name: {name} \nAge {age}\nHeight {height}\nYou are student {isStudent}");
+
+/*
+Q Create a program that:
+Takes temperature in Celsius from the user(float)
+Converts it into:
+Fahrenheit
+Kelvin
+Displays all values with proper units and formatting
+
+
+Console.WriteLine("===== Temperature Converter =====\n");
+
+Console.Write("Enter Temperature in Celsius: ");
+float celsius = float.Parse(Console.ReadLine());
+
+float fahrenheit = (celsius * 9 / 5) + 32;
+float kelvin = celsius + 273.15f;
+
+Console.WriteLine($"\n===== Converted Temperatures =====\n");
+
+Console.WriteLine($"Celsius: {celsius} °C\nFahrenheit: {fahrenheit} °F\nKelvin: {kelvin} K");
+*/
+
+
+
+/*                           ❓ Question:Type Casting – Easy Question(1 / 3)
+
+Write a program that:
+Declares an int with value 42
+Converts it to a double using implicit casting
+Prints both values
+
+int myInt = 42;
+double myDouble = myInt; // Implicit casting from int to double
+Console.WriteLine($"Integer Value: {myInt}");
+Console.WriteLine($"Double Value: {myDouble:F1}");
+
+
+
+                        ❓
+Write a program that:
+Declares a double with value 42.5
+Converts it to an int using explicit casting
+Prints both values
+
+double myDouble2 = 42.5;
+int myInt2 = (int)myDouble2; // Explicit casting from double to int
+Console.WriteLine($"Double Value: {myDouble2}");
+Console.WriteLine($"Integer Value after casting: {myInt2}");
+*/
+
+        
+
+                    Console.WriteLine("===== Variables =====\n");
+        //Q Ask the user for their birth year.Calculate and print their current age using the system’s current year.
+
+        /*Console.WriteLine("Enter Your Birth Year");
+        int birthYear = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Current Year");
+        int currentYear = Convert.ToInt32(Console.ReadLine());
+        int your_age = currentYear-birthYear;
+        Console.WriteLine("Your gae is " + your_age); */
+
+        //Q Declare a const variable and try to assign a new value to it. What error do you get? Write what you understood from that.
+
+        //const int maxSpeed = 100;
+        //Console.WriteLine("Max Speed is: " + mainSpeed);
+
+        //CustomQueryInterfaceMode Ultra Hard Level Question:
+
+        // Q Ask the user to input 5 subject marks(Maths, Science, English, Hindi, SST).
+        //Then calculate and print:
+
+        //Total Marks
+
+        //Percentage
+
+        //Message: "You scored [percentage]% in total."
+
+        //Console.WriteLine("===== Marks Calculator =====\n");
+        //const int totalSubjects = 5;
+        //int[] marks = new int[totalSubjects];
+        //string[] subjects = { "Maths", "Science", "English", "Hindi", "SST" };
+        //Console.WriteLine("Enter marks for the following subjects:");
+        //for (int i = 0; i < totalSubjects; i++)
+        //{
+        //    Console.Write($"{subjects[i]}: ");
+        //    marks[i] = Convert.ToInt32(Console.ReadLine());
+        //}
+
+        //Console.Write("Enter marks for Math: ");
+        //int Math =Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Enter marks for Science: ");
+        //int sci =Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Enter marks for English: ");
+        //int Eng =Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Enter marks for Hindi: ");
+        //int Hindi =Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Enter marks for SST: ");
+        //int SST =Convert.ToInt32(Console.ReadLine());
+
+        //int total = Math + sci + Eng + Hindi + SST; 
+        //float percentage = (float)total / 500 * 100;
+
+        //Console.WriteLine($"Total Marks: {total}");
+        //Console.WriteLine($"You scored {percentage}% in total.");
+
+
+        //Console.WriteLine("===== Operators in C# =====\n");
+
+        //Q Easy Level Question:
+        //Write a program that asks the user for two numbers.
+        //Then print: sum, difference, product, and quotient.
+        //(Use arithmetic operators: +, -, *, /)
+
+        //Console.WriteLine("Enter First Number: ");
+        //int num1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter Second Number: ");
+        //int num2 = Convert.ToInt32(Console.ReadLine());
+
+        //int sum = num1 + num2;
+        //int difference = num1 - num2;
+        //int product = num1 * num2;
+        //float quotient = (float)num1 / num2; // Cast to float for accurate division
+        //Console.WriteLine($"sum: {sum}\ndifference: {difference}\nproduct: {product}\nquotient: {quotient}");
+
+        //Hard Level Question
+
+        ////Ask the user for their age.
+        ////If the age is greater than or equal to 18, print "Eligible to vote"
+        ////Else print "Not eligible to vote"
+        ////Use comparison + if-else
+
+        //Console.WriteLine("Enter Your Age: ");
+        //int age = Convert.ToInt32(Console.ReadLine());
+        //if (age >=18)
+        //{
+        //    Console.WriteLine("Eligible to vote");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Not eligible to vote");
+        //}
+
+        //🔥 Now: C# Operators – Hard Level Questions
+        //    Q2.
+        //    Take 3 integer inputs: a, b, and c.
+        //    Print the largest number using only logical and comparison operators — no built-in max functions allowed.
+
+        //Console.WriteLine("Enter First Number: ");
+        //int a = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter Second Number: ");
+        //int b = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter Third Number");
+
+
+        //Q2. Write a calculator that asks the user to enter:
+
+        //        Two numbers
+
+        //One operator: +, -, *, /, or %
+
+        //Use switch to perform the operation based on the operator input.
+
+        //Console.WriteLine("Enter The first Number");
+        //int num1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter Operator");
+        //string ope = Console.ReadLine();
+        //Console.WriteLine("Enter The Second Number");
+        //int num2 = Convert.ToInt32(Console.ReadLine());
+
+        //if (ope == "+")
+        //{
+        //    Console.WriteLine(num1 + num2);
+        //}
+        //else if (ope == "-")
+        //{
+        //    Console.WriteLine(num1 - num2);
+        //}
+        //else if (ope == "*")
+        //{
+        //    Console.WriteLine(num1 * num2);
+        //}
+        //else if (ope == "/")
+        //{
+        //    if (num2 != 0)
+        //    {
+        //        Console.WriteLine((float)num1 / num2); // Cast to float for accurate division
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Cannot divide by zero");
+        //    }
+        //}
+        //else if (ope == "%")
+        //{
+        //    Console.WriteLine(num1 % num2);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid operator");
+        //}
+
+        //        Hard Level – Q3(Reminder):
+        //Write a program to check if a number is:
+
+        //Divisible by both 3 and 5
+
+        //Divisible by either 3 or 5
+
+        //Or divisible by neither
+
+        //Use logical operators: &&, ||, !
+
+        //int a = 3;
+        //int b = 5;
+
+        //Console.WriteLine("Enter a number: ");
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //if (number1 % 3 != 0 && number1 % 5 != 0)
+        //{
+        //    Console.WriteLine("which is neither divisible by 3 nor 5. .");
+        //}
+        //else if (number1 % 3 == 0 && number1 % 5 == 0)
+        //{
+        //    Console.WriteLine("This Number is divisible by 3 or 5.");
+        //}
+        //else if (number1 % 3 == 0 &&  number1 % 5 != 0)
+        //{
+        //    Console.WriteLine("This Number is divisible by 3.");
+        //}
+        //else if (number1 % 3 != 0 && number1 % 5 == 0)
+        //{
+        //    Console.WriteLine("This Number is divisible by5.");
+        //}
+
+
+        //Q1.Mini Grading System
+        //Ask the user to enter marks out of 100.
+        //Then:
+
+        //If marks >= 90 → Grade A
+        //If 70–89 → Grade B
+        //If 50–69 → Grade C
+        //If 35–49 → Grade D
+        //Else → Fail
+
+        //Console.WriteLine("Enter Your Marks: ");
+        //int marks = Convert.ToInt32(Console.ReadLine());
+
+        //if (marks > 100)
+        //{
+        //    Console.WriteLine("Please Enter The Valid Number");
+        //}
+        //else if (marks > 90 &&  marks <= 100)
+        //{
+        //    Console.WriteLine("Grade A");
+        //}
+        //else if (marks >= 70 && marks < 90)
+        //{
+        //    Console.WriteLine("Grade B");
+        //}
+        //else if (marks >= 50 && marks < 70)
+        //{
+        //    Console.WriteLine("Grade C");
+        //}
+        //else if (marks >= 35 && marks < 50)
+        //{
+        //    Console.WriteLine("Grade D");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Fail");
+        //}
+
+
+        //        / Q2.Advanced Calculator
+        //Ask for two numbers and two operators from the user.
+        //Perform both operations sequentially.
+
+        //Example:
+        //Input → num1 = 10, num2 = 5, op1 = +, op2 = *
+        //Output → First add: 10 + 5 = 15, then multiply: 15 * num2 = 75
+
+        //⚠️ Use if-else or switch, no built-in eval methods.
+
+
+        Console.WriteLine("Enter the first number");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter operator");
+        string ope = Console.ReadLine();
+        Console.WriteLine("Enter the second number");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        int a = num1 + num2;
+        int b = a * num2;
+
+        if (ope == "+")
+        {
+            
+            Console.WriteLine(a);
+        }
+        else if(ope == "*")
+        {
+            Console.WriteLine($" {num1}+{num2}={a} {a}*{num2}={b}");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
